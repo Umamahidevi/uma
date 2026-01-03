@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decrement Operator (--)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .question {
+            background: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #4CAF50;
+        }
+        .output {
+            color: #d63384;
+            font-weight: bold;
+        }
+        .explanation {
+            margin-top: 8px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h2>JavaScript Decrement Operator (--)</h2>
+
+
+<div class="question" id="q1"></div>
+<div class="question" id="q2"></div>
+<div class="question" id="q3"></div>
+<div class="question" id="q4"></div>
+<div class="question" id="q5"></div>
+<div class="question" id="q6"></div>
+
+<script>
+    // Question 1
+    let a = 5;
+    let b = a--;
+    document.getElementById("q1").innerHTML =
+        "<b>Question 1:</b> let a = 5; let b = a--;<br>" +
+        "<span class='output'>Output: " + a + ", " + b + "</span>" +
+        "<div class='explanation'>Explanation: a-- is post-decrement: use value first, then decrease <br>b = 5 (old value of a)<br>a = 4 At this point, a is 4 and b is 5.</div>";
+
+          
+
+
+    // Question 
+    let x = 4;
+    let y = --x;
+    document.getElementById("q2").innerHTML =
+        "<b>Question 2:</b> let x = 4; let y = --x;<br>" +
+        "<span class='output'>Output: " + x + ", " + y + "</span>" +
+        "<div class='explanation'>Explanation: --x is pre-decrement: decrease first, then use<br>x is decremented first: 4 → 3<br>y gets the updated value of x At this point, x is 3 and y is 3.</div>";
+
+    // Question 3
+    let p = 6;
+    let q = p--;
+    document.getElementById("q3").innerHTML =
+        "<b>Question 3:</b> let p = 6; let q = p--;<br>" +
+        "<span class='output'>Output: " + p + ", " + q + "</span>" +
+        "<div class='explanation'>Explanation: p-- is post-decrement: use value first, then decrease <br>q = 6 (old value of p)<br>p = 5 At this point, p is 5 and q is 6.n = 7, then m = 6</div>";
+
+    // Question 4
+    let m = 7;
+    let n = m--;
+    let o = n--;
+    document.getElementById("q4").innerHTML =
+        "<b>Question 4:</b> let m = 7; let n = m--; let o = n--;<br>" +
+        "<span class='output'>Output: " + m + ", " + n + ", " + o + "</span>" +
+        "<div class='explanation'>Explanation: m-- assigns 7 to n then m becomes 6.(n = 7, then m = 6)<br> n-- assigns 7 to o then n becomes 6.(o = 7, then n = 6 ) <br>At this point, m is 6, n is 6, and o is 7.</div>";
+
+    // Question 5
+    let i = 5;
+    let j = --i;
+    let k = j--;
+    document.getElementById("q5").innerHTML =
+        "<b>Question 5:</b> let i = 5; let j = --i; let k = j--;<br>" +
+        "<span class='output'>Output: " + i + ", " + j + ", " + k + "</span>" +
+        "<div class='explanation'>Explanation: i is first reduced to 4. j-- assigns 4 to k,(i = 4, j = 4) then j becomes 3. (k = 4, j = 3)<br>At this point, i is 4, j is 3, and k is 4.</div>";
+
+    // Question 6
+    let d = 3;
+    let e = d--;
+    let f = --e;
+    document.getElementById("q6").innerHTML =
+        "<b>Question 6:</b> let d = 3; let e = d--; let f = --e;<br>" +
+        "<span class='output'>Output: " + d + ", " + e + ", " + f + "</span>" +
+        "<div class='explanation'>Explanation: d-- assigns 3 to e then d becomes 2. (e = 3, d = 2)<br>--e decreases e first and assigns 1 to f.(e = 2 → 1, f = 1)<br>At this point, d is 2, e is 1, and f is 1.</div>";
+</script>
+
+</body>
+</html>
